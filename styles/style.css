@@ -184,7 +184,6 @@
 
 .card__icon-button {
   background-color: transparent;
-  border: none;
   cursor: pointer;
   padding: 0;
 }
@@ -228,7 +227,6 @@
   align-items: center;
   box-sizing: border-box;
   padding: 30px;
-  border: none;
   border: 2px solid var(--color-main);
   max-width: 357px;
 }
