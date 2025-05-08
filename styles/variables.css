@@ -1,1 +1,17 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --font-main: 'Inter';
+  --font-accent: 'Press Start 2P';
+  --font-weight-main: 400;
+  --font-weight-accent: 700;
+  --color-main: #000;
+  --color-accent: rgba(255, 255, 255, 0.5);
+  --color-veil: rgba(0, 0, 0, 0.75);
+  --color-decor-point: #d3d3d3;
+  --color-decor-light-gradient: #e7e7e7;
+  --color-decor-dark-gradient: #1a1a1a;
+  --background-color: #fff;
+  --animation-fill-color: #FF0000;
+  --color-contour-heart: #000;
+  --color-accent-heart: #fff;
+}
