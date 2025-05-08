@@ -161,7 +161,6 @@
 
 .button {
   background-color: var(--background-color);
-  border: none;
   position: relative;
   cursor: pointer;
   border: 2px solid var(--color-main);
@@ -186,6 +185,7 @@
   background-color: transparent;
   cursor: pointer;
   padding: 0;
+  border: none;
 }
 
 .like-icon {
