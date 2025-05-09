@@ -73,6 +73,7 @@
   flex-direction: column;
   border: 2px solid var(--color-main);
   background-color: var(--background-color);
+  inline-size: clamp(375px, 100%, 696px);
 }
 
 .card__title {
@@ -86,6 +87,7 @@
 .card__wrap-image {
   position: relative;
   outline: 2px solid var(--color-main);
+  overflow: hidden;
 }
 
 .card__image-text {
@@ -139,7 +141,6 @@
 
 .card__image__filter-blur {
   filter: blur(13px);
-  overflow: hidden;
 }
 
 .card__image__filter-multiple {
@@ -375,6 +376,10 @@
     top: 25px;
     right: 11px;
   }
+
+  .card__image {
+    block-size: 374px;
+    inline-size: 374px;
 
   .button__icon {
     width: 28px;
