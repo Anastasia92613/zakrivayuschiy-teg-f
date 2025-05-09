@@ -35,7 +35,7 @@
   margin-block-start: 100px;
   margin-block-end: 100px;
   border: 2px solid var(--color-main);
-  font-family: var(--font-accent);
+  font-family: var(--font-accent), sans-serif;
   font-weight: var(--font-weight-main);
   box-sizing: border-box;
   padding: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem)
@@ -93,19 +93,20 @@
   content: "";
   top: 27px;
   right: 25px;
-  font-family: var(--font-accent);
+  font-family: var(--font-accent), sans-serif;
   font-weight: var(--font-weight-main);
   line-height: 100%;
   font-size: 14px;
   mix-blend-mode: hard-light;
-  -webkit-text-stroke: 1px var(--color-accent);
+  text-shadow: -1px 0 var(--color-accent), 0 1px var(--color-accent),
+    1px 0 var(--color-accent), 0 -1px var(--color-accent);
   z-index: 2;
 }
 
-@supports not (-webkit-text-stroke: 1px var(--color-accent)) {
+@supports (-webkit-text-stroke: 1px var(--color-accent)) {
   .card__image-text {
-    text-shadow: -1px 0 var(--color-accent), 0 1px var(--color-accent),
-      1px 0 var(--color-accent), 0 -1px var(--color-accent);
+    -webkit-text-stroke: 1px var(--color-accent);
+    text-shadow: none;
   }
 }
 
@@ -164,6 +165,7 @@
   position: relative;
   cursor: pointer;
   border: 2px solid var(--color-main);
+  transition: box-shadow 0.3s ease;
 }
 
 .card__like-button {
@@ -186,6 +188,7 @@
   cursor: pointer;
   padding: 0;
   border: none;
+  transition: outline 0.3s ease;
 }
 
 .like-icon {
@@ -194,7 +197,7 @@
 }
 
 .button__text {
-  font-family: var(--font-accent);
+  font-family: var(--font-accent), sans-serif;
   font-weight: var(--font-weight-main);
   color: var(--background-color);
   font-size: 14px;
@@ -238,7 +241,7 @@
 }
 
 .dialog-save__tex {
-  font-family: var(--font-accent);
+  font-family: var(--font-accent), sans-serif;
   font-size: 14px;
   line-height: 150%;
   text-transform: uppercase;
@@ -261,7 +264,6 @@
 
 .button:focus-visible {
   box-shadow: 2px 2px 0 var(--color-main);
-  transition: box-shadow 0.3s ease;
 }
 
 .button::before {
@@ -284,7 +286,6 @@
 
 .card__icon-button:focus-visible {
   outline: 2px solid var(--color-main);
-  transition: outline 0.3s ease;
 }
 
 .contour {
