@@ -380,6 +380,7 @@
   .card__image {
     block-size: 374px;
     inline-size: 374px;
+  }
 
   .button__icon {
     width: 28px;
