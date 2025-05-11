@@ -27,13 +27,12 @@
 }
 
 .container {
-  inline-size: clamp(375px, 100%, 700px);
+  inline-size: clamp(375px, 100%, 696px);
   margin: 0 auto;
 }
 
 .header {
-  margin-block-start: 100px;
-  margin-block-end: 100px;
+  margin: 100px auto;
   border: 2px solid var(--color-main);
   font-family: var(--font-accent), sans-serif;
   font-weight: var(--font-weight-main);
@@ -115,8 +114,9 @@
 .card__image {
   display: block;
   block-size: 696px;
-  inline-size: 696px;
+  inline-size: 695px;
   object-fit: cover;
+  object-position: center;
 }
 
 .card__image__filter-grayscale {
@@ -252,7 +252,7 @@
   grid-column: 1/-1;
   cursor: pointer;
   box-sizing: border-box;
-  padding: 12px 132px;
+  padding: 7px 132px;
   text-transform: uppercase;
   margin-block-start: 30px;
 }
@@ -286,7 +286,7 @@
 }
 
 .card__icon-button:focus-visible {
-  outline: 2px solid var(--color-main);
+  border: 2px solid var(--color-main);
 }
 
 .contour {
@@ -345,7 +345,7 @@
 }
 
 .like-icon.is-liked .contour {
-  fill: var(--animation-fill-color);
+  fill: var(--color-contour-heart);
   transition: fill 0.3s 0.06s;
 }
 
@@ -385,5 +385,9 @@
   .button__icon {
     width: 28px;
     height: 28px;
+  }
+
+  .dialog-save[open] {
+    padding: 30px 42px;
   }
 }
